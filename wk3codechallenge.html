@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/wk3ccstyles.css">
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -19,18 +19,19 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            
+                
+                <div class="col-8 col-lg-2">
                     <a href="#"><img src="img/logo.png" class="img-fluid" alt=""></a>
                 </div>
-                <div class="col">
+                <div class="col d-none d-lg-block">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-
-                <div class="col-md-4 col-xl-2 mt-4">
-                    <a href="#reserveForm" role="button" class="btn btn-lg bg-info text-light text-nowrap"
-                        data-toggle="tooltip" data-html="true" data-placement="bottom"
-                        title="Or call us at <br/><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+                <div class="col-2">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
                 </div>
             </div>
         </div>
@@ -53,12 +54,16 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i
                                 class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                    
                 </ul>
                     
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i> Login
-                    </a>
+                    <div class="col-md-4 col-xl-2">
+                        <a href="#reserveForm" role="button" class="btn btn-lg bg-dark text-light text-nowrap"
+                            data-toggle="tooltip" data-html="true" data-placement="bottom"
+                            title="Or call us at <br/><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+                    </div>
+                   
                 </span>
             </div>
 
@@ -236,7 +241,7 @@
         <div class="row row-content" id="reserveForm">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
-                    <h3 class="card-header bg-info text-white">Reserve A Campsite</h3>
+                    <h3 class="card-header bg-dark text-white">Reserve A Campsite</h3>
 
                     <div class="card-body">
                         <form action="">
@@ -268,7 +273,7 @@
                             <!-- Search -->
                             <div class="form-group row">
                                 <div class="col">
-                                    <button type="submit" class="btn btn-primary">Search</button>
+                                    <button type="submit" class="btn btn-dark">Search</button>
                                 </div>
                             </div>
 
@@ -283,7 +288,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <div class="row">
+            <div class="row text-light">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
